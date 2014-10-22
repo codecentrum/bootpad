@@ -1,20 +1,8 @@
 <?php 
 /**
  * Bootseed
- * Copyright © 2014 The Bootseed Project
- *
- * The texts of the GNU Affero General Public License with an additional
- * permission and of our proprietary license can be found at and
- * in the LICENSE file you have received along with this program.
- *
- * According to our dual licensing model, this program can be used either
- * under the terms of the GNU Affero General Public License, version 3,
- * or under a proprietary license.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
+ * Build with love by Eky Fauzi
+ * Currently version 1.0.0
  */
 
 
@@ -33,14 +21,10 @@ ob_start();
  * This can be set to anything, but default usage is:
  *
  *     development
- *     testing
  *     production
  *
- * NOTE: If you change these, also change the error_reporting() code below
- *
  */
-
-define('ENVIRONMENT', 'development');
+define( 'ENVIRONMENT', 'development' );
 
 /*
  *---------------------------------------------------------------
@@ -50,40 +34,51 @@ define('ENVIRONMENT', 'development');
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
-
 if (defined('ENVIRONMENT')){
+
 	switch (ENVIRONMENT){
+
 		case 'development':
 			error_reporting(E_ALL);
 		break;
 	
-		case 'testing':
 		case 'production':
 			error_reporting(0);
 		break;
 
 		default:
 			exit('The application environment is not set correctly.');
+
 	}
+
 }
 
+/*
+ *---------------------------------------------------------------
+ * PATH
+ *---------------------------------------------------------------
+ *
+ * set the path of your basepath, system path, and application path
+ */
+define( 'BASEPATH', 'http://localhost/ekyfauzi/bootseed/' ); //must include / (slash) in the end of url
+define( 'SYSTEM_PATH', 'system' );
+define( 'APPLICATION_PATH', 'application' );
 
-//must included / in end of url
-define( 'BASEPATH', "http://localhost/ekyfauzi/bootseed/" );
-define( 'SYSTEM_PATH', "system" );
-define( 'APPLICATION_PATH', "application" );
+
+/*
+ * defined first page that opened first time (welcome page)
+ */
+define( 'CONTROLLER', 'home' );
+
+/*
+ * defined first method that opened when opened page. eg: www.site.com/welcome/index
+ */
+define( 'METHOD', 'index' );
 
 
-define( 'BOOTSTRAP_VERSION', "3.2.0" );
-define( 'JQUERY_VERSION', "1.11.1" );
-
-
-//defined first page that opened first time (welcome page)
-define( 'CONTROLLER', "home" );
-
-//defined first method that opened when opened page. eg: www.site.com/welcome/index
-define( 'METHOD', "index" );
-
+/*
+ * including the autoload and start the application
+ */
 require_once SYSTEM_PATH .'/autoload.php';
 
 $bootseed = new bootseed;

@@ -19,7 +19,9 @@ class home extends controller {
 
 		// including model if needed
 		$this->home_model = $this->model('home_model');
+		// call the model function
 		$hello_world = $this->home_model->hello_world();
+
 
 		// send value from model to view
 		$data_for_view['hello_world'] = $hello_world;

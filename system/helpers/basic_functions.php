@@ -1,19 +1,22 @@
 <?php  
 
-
-// place functions here
-// or you can place functions in function.php than you can includeing that
+/*
+ * place functions here
+ * or you can place functions in function.php than you can includeing that
+ */
 
 if ( ! function_exists('base_url')){
 
 	function base_url($url=''){
-		# code...
 
 		if ( $url != '' ) {
-			# code...
+
 			return  BASEPATH . $url ;
+
 		} else {
+
 			return  BASEPATH;
+			
 		}
 		
 	}

@@ -14,3 +14,5 @@ Twitter @ekyfauzi
 Instagram @ekyfauzi
 
 Email me@ekyfauzi.com
+
+http://www.ekyfauzi.com

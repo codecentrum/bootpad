@@ -1,17 +1,28 @@
 <?php  
 
-/**
-* 
-*/
+/*
+ *---------------------------------------------------------------
+ * CONTROLLER
+ *---------------------------------------------------------------
+ *
+ * this class handle model, view, and library
+ */
 class controller extends bootseed{
 	
-	function __construct()
-	{
-		# code...
+	function __construct(){
+		
 
 	}
 
-	public function model($model){
+
+	/*
+	 *---------------------------------------------------------------
+	 * MODEL
+	 *---------------------------------------------------------------
+	 *
+	 * calling model that you needed
+	 */
+	public function model( $model ){
 
 		require_once APPLICATION_PATH .'/models/'. $model .'.php';
 		
@@ -21,13 +32,27 @@ class controller extends bootseed{
 
 	}
 
-	public function view($view, $data_from_controller = array() ){
+	/*
+	 *---------------------------------------------------------------
+	 * VIEW
+	 *---------------------------------------------------------------
+	 *
+	 * calling view that you needed
+	 */
+	public function view( $view, $data_from_controller = array() ){
 
 		require_once APPLICATION_PATH .'/views/'. $view .'.php';
 		
 	}
 
-	public function library($library){
+	/*
+	 *---------------------------------------------------------------
+	 * LIBRARY
+	 *---------------------------------------------------------------
+	 *
+	 * calling library that you needed
+	 */
+	public function library( $library ){
 
 		require_once APPLICATION_PATH .'/libraries/'. $library .'.php';
 

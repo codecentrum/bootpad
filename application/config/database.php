@@ -26,7 +26,7 @@ $db_user = "";
 $db_password = "";
 
 /* 
- * The name of the database for WordPress 
+ * MySQL database name 
  */
 $db_name = "";
 

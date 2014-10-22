@@ -52,7 +52,7 @@ class bootpad {
 		 */
 		require_once  APPLICATION_PATH .'/config/database.php';
 
-		if ( !empty( $db_host ) && !empty( $db_user ) && !empty( $db_password ) && !empty( $db_name ) ){
+		if ( !empty( $db_host ) && !empty( $db_user ) && !empty( $db_name ) ){
 
 			$db_connect = mysql_connect( $db_host, $db_user, $db_password );
 

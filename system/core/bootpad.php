@@ -109,7 +109,6 @@ class bootpad {
 			 * if file controller not exist
 			 * or controller not same as home
 			 * by default, will showing error message if environment is development
-			 * if environment is production, will set to 404
 			 */
 			if ( !empty( $url[0] ) && $url[0] != $this->controller ) {
 
@@ -118,11 +117,7 @@ class bootpad {
 					echo "File <code>". APPLICATION_PATH ."/controllers/". $url[0] .".php</code> not found!" ;
 					exit();
 
-				} elseif ( ENVIRONMENT == "production" ) {
-
-					$this->controller = "404";
-
-				}
+				} 
 				
 
 			} 

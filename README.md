@@ -1,7 +1,8 @@
-Bootseed
+bootpad
 =======
 
 The simple MVC application for build the website application easier
+including Twitter Bootstrap and jQuery
 This software is open source, so you can modification if needed
 I hope this flatform can used by everyone even the beginner
 

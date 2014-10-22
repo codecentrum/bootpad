@@ -1,6 +1,6 @@
 <?php 
 /**
- * Bootseed
+ * bootpad
  * Build with love by Eky Fauzi
  * Currently version 1.0.0
  */
@@ -60,7 +60,7 @@ if (defined('ENVIRONMENT')){
  *
  * set the path of your basepath, system path, and application path
  */
-define( 'BASEPATH', 'http://localhost/ekyfauzi/bootseed/' ); //must include / (slash) in the end of url
+define( 'BASEPATH', 'http://localhost/ekyfauzi/bootpad/' ); //must include / (slash) in the end of url
 define( 'SYSTEM_PATH', 'system' );
 define( 'APPLICATION_PATH', 'application' );
 
@@ -81,6 +81,6 @@ define( 'METHOD', 'index' );
  */
 require_once SYSTEM_PATH .'/autoload.php';
 
-$bootseed = new bootseed;
+$bootpad = new bootpad;
 
 ?>

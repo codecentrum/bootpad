@@ -7,7 +7,7 @@
  *
  * this class handle model, view, and library
  */
-class controller extends bootseed{
+class controller extends bootpad{
 	
 	function __construct(){
 		

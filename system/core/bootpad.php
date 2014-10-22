@@ -1,7 +1,7 @@
 <?php  
 
 /**
- * Bootseed
+ * bootpad
  * Build with love by Eky Fauzi (2014)
  * Currently version 1.0.0
  *
@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-class bootseed {
+class bootpad {
 
 	protected $controller = CONTROLLER;
 	protected $method = METHOD;

@@ -2,7 +2,7 @@
 /**
  * bootpad
  * Build with love by Eky Fauzi
- * Currently version 1.0.0
+ * Currently version 1.0.1
  */
 
 
@@ -61,7 +61,7 @@ if (defined('ENVIRONMENT')){
  * set the path of your basepath, system path, and application path
  *
  * BASEPATH : 
- *		Directory/path where you install bootpad 
+ *		Directory where you install bootpad (root)
  * 		eg: 'yoursite.com/' or 'localhost/bootpad/'
  *
  * SYSTEM_PATH : 

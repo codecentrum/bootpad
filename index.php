@@ -59,8 +59,21 @@ if (defined('ENVIRONMENT')){
  *---------------------------------------------------------------
  *
  * set the path of your basepath, system path, and application path
+ *
+ * BASEPATH : 
+ *		Directory/path where you install bootpad 
+ * 		eg: 'yoursite.com/' or 'localhost/bootpad/'
+ *
+ * SYSTEM_PATH : 
+ *		Directory that you place the bootpad core system 
+ * 		by default set to 'system'
+ *
+ * APPLICATION_PATH : 
+ *		Directory that you place the 
+ * 		bootpad application ( models, views, cotroller, etc.) by default set to 'application'
+ *			
  */
-define( 'BASEPATH', 'http://localhost/ekyfauzi/bootpad/' ); //must include / (slash) in the end of url
+define( 'BASEPATH', 'http://www.yoursite.com/' ); //must include / (slash) in the end of url
 define( 'SYSTEM_PATH', 'system' );
 define( 'APPLICATION_PATH', 'application' );
 

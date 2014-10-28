@@ -33,8 +33,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#">Your page</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -73,7 +72,9 @@
 
 <div class="container">
 	<div class="jumbotron">
-		<h3>Welcome to bootpad</h3>
+		<h3>Level up!</h3>
+        <p>Congratulation, now you can use bootpad!</p>
+        <p>You can modified this view on <code>/application/view/home_view.php</code> also you can add another page as you needed.</p>
 	</div>
 
 </div>

@@ -1,34 +1,25 @@
 <?php
 
-/*
- *---------------------------------------------------------------
- * DATABASE CONFIGURATION
- *---------------------------------------------------------------
- *
- * Set your database configuration here
- *
- */
+# ---------------------------------------------------------------
+#  DATABASE CONFIGURATION
+# ---------------------------------------------------------------
+# 
+# Set your database configuration here
+# NOTE: Leave them blank if you not use database
 
-/* 
- * MySQL hostname 
- * eg. localhost
- */
+
+# MySQL hostname 
+# eg. localhost
 $db_host = "";
 
-/* 
- * MySQL database username 
- */
+# MySQL database username 
 $db_user = "";
 
-/* 
- * MySQL database password 
- */
+# MySQL database password 
 $db_password = "";
 
-/* 
- * MySQL database name 
- */
+# MySQL database name 
 $db_name = "";
 
 
-?>
+# End of file

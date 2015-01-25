@@ -1,30 +1,26 @@
 <?php  
 
-/*
- *---------------------------------------------------------------
- * CONTROLLER
- *---------------------------------------------------------------
- *
- * this class handle model, view, and library
- */
-class controller extends bootpad{
+# ---------------------------------------------------------------
+#  CONTROLLER
+# ---------------------------------------------------------------
+# 
+# This class handle model, view, and library
+# 
+class Controller extends Bootpad{
 	
 	function __construct(){
 		
 
 	}
 
-
-	/*
-	 *---------------------------------------------------------------
-	 * MODEL
-	 *---------------------------------------------------------------
-	 *
-	 * calling model that you needed
-	 */
+	# ---------------------------------------------------------------
+	#  MODEL
+	# ---------------------------------------------------------------
+	# 
+	# calling model that you needed
 	public function model( $model ){
 
-		require_once APPLICATION_PATH .'/models/'. $model .'.php';
+		require_once APPLICATION_PATH .'/models/'. strtolower($model) .'.php';
 		
 		$this->model = new $model;
 
@@ -32,26 +28,22 @@ class controller extends bootpad{
 
 	}
 
-	/*
-	 *---------------------------------------------------------------
-	 * VIEW
-	 *---------------------------------------------------------------
-	 *
-	 * calling view that you needed
-	 */
+	# ---------------------------------------------------------------
+	#  VIEW
+	# ---------------------------------------------------------------
+	# 
+	# calling view that you needed
 	public function view( $view, $data_from_controller = array() ){
 
 		require_once APPLICATION_PATH .'/views/'. $view .'.php';
 		
 	}
 
-	/*
-	 *---------------------------------------------------------------
-	 * LIBRARY
-	 *---------------------------------------------------------------
-	 *
-	 * calling library that you needed
-	 */
+	# ---------------------------------------------------------------
+	#  LIBRARY
+	# ---------------------------------------------------------------
+	# 
+	# calling library that you needed
 	public function library( $library ){
 
 		require_once APPLICATION_PATH .'/libraries/'. $library .'.php';
@@ -59,5 +51,3 @@ class controller extends bootpad{
 	}
 
 }
-
-?>

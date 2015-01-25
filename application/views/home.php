@@ -74,7 +74,7 @@
 	<div class="jumbotron">
 		<h3>Level up!</h3>
         <p>Congratulation, now you can use bootpad!</p>
-        <p>You can modified this view on <code>/application/view/home_view.php</code> also you can add another page as you needed.</p>
+        <p>You can modified this view on <code>/application/view/home.php</code> also you can add another page as you needed.</p>
 	</div>
 
 </div>

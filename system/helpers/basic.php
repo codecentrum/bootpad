@@ -1,9 +1,7 @@
 <?php  
 
-/*
- * place functions here
- * or you can place functions in function.php than you can includeing that
- */
+# place functions here
+# or you can place functions in function.php than you can includeing that
 
 if ( ! function_exists('base_url')){
 
@@ -48,4 +46,4 @@ if ( ! function_exists('redirect')){
 	}
 }
 
-?>
+# End of file

@@ -11,7 +11,7 @@
 if ( $environment === '') { $environment = 'development'; } define( 'ENVIRONMENT', $environment );
 
 # ---------------------------------------------------------------
-#  ERROR REPORTING
+# ERROR REPORTING
 # ---------------------------------------------------------------
 # 
 # Different environments will require different levels of error reporting.
@@ -57,7 +57,7 @@ if ($basepath === '') {
 }
 
 # Define basepath
-# must include 'http://' before url and '/' (slash) in the end of url
+# Must include 'http://' before url and '/' (slash) in the end of url
 define( 'BASEPATH', $basepath ); 
 
 # Define system path
@@ -81,7 +81,7 @@ class Bootpad {
 
 	public function __construct() {
 
-		# checking if basic_helper.php is exist or not
+		# Checking if basic_helper.php is exist or not
 		if ( !file_exists( SYSTEM_PATH .'/helpers/basic_helper.php' ) ) {
 
 			echo "File <code>". SYSTEM_PATH ."/helpers/basic_helper.php</code> not found!" ;
@@ -90,10 +90,10 @@ class Bootpad {
 
 		}
 
-		# if basic_helper.php is exsist, include here
+		# If basic_helper.php is exsist, include here
 		require_once  SYSTEM_PATH .'/helpers/basic_helper.php';
 
-		# checking if database.php is exist or not
+		# Checking if database.php is exist or not
 		if ( !file_exists( 'config/database.php' ) ) {
 
 			echo "File <code>config/database.php</code> not found!" ;
@@ -102,8 +102,8 @@ class Bootpad {
 
 		}
 
-		# if database.php is exsist, include here
-		# setting up database connection if database is set
+		# If database.php is exsist, include here
+		# Setting up database connection if database is set
 		require_once 'config/database.php';
 
 		if ( !empty( $db_host ) && !empty( $db_user ) && !empty( $db_name ) ){
@@ -122,12 +122,12 @@ class Bootpad {
 
 		}
 		
-		# parsing url and store in array
+		# Parsing url and store in array
 		if( isset( $_GET['url'] ) ) {
 
 			$get_url = $_GET['url'];
 
-			# clearing $_GET['url']
+			# Clearing $_GET['url']
 			unset( $_GET['url'] );
 
 			$url = explode( '/', filter_var( rtrim($get_url, '/' ), FILTER_SANITIZE_URL ) );
@@ -138,20 +138,20 @@ class Bootpad {
 
 		}
 
-		# checking controller exist or not
-		# if exist, controller will replace by controller given by url
+		# Checking controller exist or not
+		# If exist, controller will replace by controller given by url
 		if (file_exists( APPLICATION_PATH .'/controllers/' . $url[0] . '_controller.php' ) ) {
 
 			$this->controller = $url[0];
 
-			# clearing first array index
+			# Clearing first array index
 			unset( $url[0] );
 
 		} else {
 
-			# if file controller not exist
-			# or controller not same as home
-			# by default, will showing error message if environment is development
+			# If file controller not exist
+			# Or controller not same as home
+			# By default, will showing error message if environment is development
 			if ( !empty( $url[0] ) && $url[0] != $this->controller ) {
 
 				if ( ENVIRONMENT == "development" ) {
@@ -166,7 +166,7 @@ class Bootpad {
 
 		}
 
-		# calling controller
+		# Calling controller
 		require_once  APPLICATION_PATH .'/controllers/' . $this->controller . '_controller.php';
 
 		$this->controller_class_name = preg_replace("/[^a-zA-Z+]/", '', $this->controller.'_controller');
@@ -178,16 +178,16 @@ class Bootpad {
 
 				$this->method = $url[1];
 
-				# clearing second array index
+				# Clearing second array index
 				unset( $url[1] );
 			}
 		}
 
-		# rest of the array that has been cleaned (array[0] dan array[1]), 
-		# it will be considered as parameters (array[2] etc.)
+		# Rest of the array that has been cleaned (array[0] dan array[1]), 
+		# It will be considered as parameters (array[2] etc.)
 		$this->params = $url ? array_values( $url ) : array();
 
-		# including parameters to function
+		# Including parameters to function
 		call_user_func_array( array( $this->controller, $this->method ), $this->params );
 
 	}

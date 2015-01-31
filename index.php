@@ -10,7 +10,7 @@ session_start();
 ob_start();
 
 # ---------------------------------------------------------------
-#  APPLICATION ENVIRONMENT
+# APPLICATION ENVIRONMENT
 # ---------------------------------------------------------------
 # 
 #  You can load different configurations depending on your
@@ -29,7 +29,7 @@ $environment = '';
 
 
 # ---------------------------------------------------------------
-#  PATH
+# PATH
 # ---------------------------------------------------------------
 
 # Directory where you install bootpad (root)
@@ -53,7 +53,7 @@ $method = '';
 
 
 # ---------------------------------------------------------------
-#  START ENGINE
+# START ENGINE
 # ---------------------------------------------------------------
 
 # Include core file of this application

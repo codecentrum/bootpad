@@ -1,7 +1,7 @@
 <?php
 
 # ---------------------------------------------------------------
-#  DATABASE CONFIGURATION
+# DATABASE CONFIGURATION
 # ---------------------------------------------------------------
 # 
 # Set your database configuration here

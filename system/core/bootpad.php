@@ -1,8 +1,8 @@
 <?php  
 
-# bootpad
+# Bootpad
 # Build with love by Eky Fauzi (2014)
-# Currently version 1.2.0
+# Currently version 1.4.0
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -81,22 +81,22 @@ class Bootpad {
 
 	public function __construct() {
 
-		# checking if basic.php is exist or not
-		if ( !file_exists( SYSTEM_PATH .'/helpers/basic.php' ) ) {
+		# checking if basic_helper.php is exist or not
+		if ( !file_exists( SYSTEM_PATH .'/helpers/basic_helper.php' ) ) {
 
-			echo "File <code>". SYSTEM_PATH ."/helpers/basic.php</code> not found!" ;
+			echo "File <code>". SYSTEM_PATH ."/helpers/basic_helper.php</code> not found!" ;
 
 			exit();
 
 		}
 
-		# if basic.php is exsist, include here
-		require_once  SYSTEM_PATH .'/helpers/basic.php';
+		# if basic_helper.php is exsist, include here
+		require_once  SYSTEM_PATH .'/helpers/basic_helper.php';
 
 		# checking if database.php is exist or not
-		if ( !file_exists( APPLICATION_PATH .'/config/database.php' ) ) {
+		if ( !file_exists( 'config/database.php' ) ) {
 
-			echo "File <code>". APPLICATION_PATH ."/config/database.php</code> not found!" ;
+			echo "File <code>config/database.php</code> not found!" ;
 
 			exit();
 
@@ -104,7 +104,7 @@ class Bootpad {
 
 		# if database.php is exsist, include here
 		# setting up database connection if database is set
-		require_once  APPLICATION_PATH .'/config/database.php';
+		require_once 'config/database.php';
 
 		if ( !empty( $db_host ) && !empty( $db_user ) && !empty( $db_name ) ){
 
@@ -195,3 +195,4 @@ class Bootpad {
 }
 
 # End of file
+# Location /system/core/bootpad.php

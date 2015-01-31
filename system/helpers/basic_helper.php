@@ -1,7 +1,6 @@
 <?php  
 
-# place functions here
-# or you can place functions in function.php than you can includeing that
+# Basic helper
 
 if ( ! function_exists('base_url')){
 
@@ -46,4 +45,24 @@ if ( ! function_exists('redirect')){
 	}
 }
 
+# Render view files
+# Can be access on view
+if ( ! function_exists('render')){
+	function render( $type = 'layout', $name = null ) {
+
+		# You can define render type like json, html, or php to your view
+		if ( $type == 'layout' ) {
+			
+			if ( $name != '' ) {
+	            
+				require_once  APPLICATION_PATH .'/views/'. $name .'.php';
+
+	        } 
+
+		}
+
+	}
+}
+
 # End of file
+# Location /system/helpers/basic_helper.php

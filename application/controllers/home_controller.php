@@ -31,4 +31,4 @@ class HomeController extends Controller {
 
 }
 
-?>
+# End of file

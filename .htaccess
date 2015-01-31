@@ -1,11 +1,17 @@
+# IMPORTANT!
+# This file required by Bootpad
+# Please DO NOT delete this file
+
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 
-#By default the rule will re-direct any url that does not include 
-#the text "index.php", "images", "robots.txt", "js", "css" to your default controller.
+# By default the rule will re-direct any url that does not include 
+# the text "index.php", "images", "robots.txt", "js", "css" to your 
+# default controller
+
 RewriteCond $1 !^(index\.php|images|robots\.txt|css|js)
 
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

@@ -14,3 +14,5 @@ class User extends Controller{
 	}
 
 }
+
+# End of file

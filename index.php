@@ -1,15 +1,14 @@
 <?php 
-#
-# bootpad
-# Build with love by Eky Fauzi
-# Currently version 1.0.1
-#
 
+# Bootpad
+# Build with love by Eky Fauzi
+# Please set your application configuration here
+# If you do not have any configuration, please leave the 
+# following variables blank
 
 session_start();
 ob_start();
 
-# 
 # ---------------------------------------------------------------
 #  APPLICATION ENVIRONMENT
 # ---------------------------------------------------------------
@@ -25,10 +24,10 @@ ob_start();
 # 
 #
 # By default set to 'development'
+
 $environment = '';
 
 
-# 
 # ---------------------------------------------------------------
 #  PATH
 # ---------------------------------------------------------------
@@ -37,20 +36,36 @@ $environment = '';
 # eg: 'http://yoursite.com/' or 'http://localhost/bootpad/'
 # You can set your basepath or you can leave it blank
 # By default basepath will automaticaly set
+
 $basepath = '';
 
-# First controller that you want to open first
+
+# Controller/page that you want to open first time
 # By default set to 'home'
+
 $controller = '';
+
 
 # Method that you want to open firt time
 # By default set to 'index'
+
 $method = '';
 
-# including the autoload and start the application
-require_once 'autoload.php';
+
+# ---------------------------------------------------------------
+#  START ENGINE
+# ---------------------------------------------------------------
+
+# Include core file of this application
+# IPORTANT! Do not remove the following lines
+
+require_once 'system/core/bootpad.php';
+require_once 'system/core/controller.php';
+
+
+# Start the application
 
 new Bootpad;
 
 # End of file index.php
-# Location: ./index.php
+# Location: /index.php

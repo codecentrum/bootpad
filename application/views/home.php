@@ -11,7 +11,7 @@
  	<title>bootpad | Simple MVC with Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('vendors/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
 
 </head>
 
@@ -73,8 +73,8 @@
 <div class="container">
 	<div class="jumbotron">
 		<h3>Level up!</h3>
-        <p>Congratulation, now you can use bootpad!</p>
-        <p>You can modified this view on <code>/application/view/home.php</code> also you can add another page as you needed.</p>
+        <p>Congratulation, now you can use Bootpad!</p>
+        <p>You can modified this view on <code>/application/views/home.php</code> also you can add another page as you needed.</p>
 	</div>
 
 </div>
@@ -84,8 +84,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- JQUERY CORE -->
-<script type="text/javascript" src="<?php echo base_url('assets/jquery/jquery.min.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('vendors/jquery/jquery.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('vendors/bootstrap/js/bootstrap.min.js'); ?>"></script>
 
 </body>
 </html>

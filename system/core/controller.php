@@ -51,3 +51,6 @@ class Controller extends Bootpad{
 	}
 
 }
+
+# End of file
+# Location /system/core/controler.php

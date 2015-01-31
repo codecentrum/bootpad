@@ -57,7 +57,7 @@ $method = '';
 # ---------------------------------------------------------------
 
 # Include core file of this application
-# IPORTANT! Do not remove the following lines
+# IMPORTANT! Do not remove the following lines
 
 require_once 'system/core/bootpad.php';
 require_once 'system/core/controller.php';

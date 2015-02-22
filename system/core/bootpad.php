@@ -156,7 +156,7 @@ class Bootpad {
 
 				if ( ENVIRONMENT == "development" ) {
 					
-					echo "File <code>". APPLICATION_PATH ."/controllers/". $this->controller ."controller.php</code> not found!" ;
+					echo "File <code>". APPLICATION_PATH ."/controllers/". $url[0] ."_controller.php</code> not found!" ;
 					exit();
 
 				} 

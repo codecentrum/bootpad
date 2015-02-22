@@ -25,7 +25,8 @@ class HomeController extends Controller {
 		$data_for_view['hello_world'] = $hello_world;
 
 		# call view and send data for using in view
-		$this->view('home', $data_for_view);
+		# NOTE: please name your view file same as controller method
+		$this->view('home/index', $data_for_view);
 
 	}
 

@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="#">
-
- 	<title>bootpad | Simple MVC with Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url('vendors/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
-
-</head>
-
-<body>
+<!-- Always render header for each view files -->
+<?php render('layout', 'layouts/header'); ?>
 
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -79,13 +63,5 @@
 
 </div>
 
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!-- JQUERY CORE -->
-<script type="text/javascript" src="<?php echo base_url('vendors/jquery/jquery.min.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('vendors/bootstrap/js/bootstrap.min.js'); ?>"></script>
-
-</body>
-</html>
+<!-- Always render footer here -->
+<?php render('layout', 'layouts/footer'); ?>

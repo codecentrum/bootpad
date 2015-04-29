@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">bootpad</a>
+            <a class="navbar-brand" href="#">Bootpad</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +58,7 @@
 	<div class="jumbotron">
 		<h3>Level up!</h3>
         <p>Congratulation, now you can use Bootpad!</p>
-        <p>You can modified this view on <code>/application/views/home.php</code> also you can add another page as you needed.</p>
+        <p>You can modified this view on <code>/application/views/home/index.php</code> also you can add another page as you needed.</p>
 	</div>
 
 </div>

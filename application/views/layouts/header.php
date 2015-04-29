@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="#">
 
- 	<title>Bootpad | Simple MVC with Bootstrap</title>
+ 	<title>Bootpad</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('vendors/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
